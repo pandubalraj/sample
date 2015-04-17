@@ -6,9 +6,17 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :price, :class => 'control-label' %>
+    <%= f.label :category_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :price, :class => 'number_field' %>
+      <%= collection_select(:product, :category_id, Category.all, :id, :name) %>
+      <%#= f.number_field :category_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :sub_category_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= collection_select(:product, :sub_category_id, SubCategory.all, :id, :name) %>
+      <%#= f.number_field :sub_category_id, :class => 'number_field' %>
     </div>
   </div>
 

@@ -3,9 +3,7 @@
 one:
   name: MyString
   category_id: 1
-  sub_category_id: 1
 
 two:
   name: MyString
   category_id: 1
-  sub_category_id: 1
